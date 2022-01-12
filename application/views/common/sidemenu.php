@@ -6,7 +6,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="/assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="/images/logo.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block"><?php echo ($_SESSION['memberlevel']==='2')?'Member':'Admin';?></a>
@@ -25,17 +25,23 @@
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Daftar Anggota
-                <i class="fas fa-angle-right right"></i>
               </p>
             </a>
           </li>
           <?php }?>
           <li class="nav-item menu-open">
             <a href="/members/profile" class="nav-link <?php echo $active['profile'];?>">
-              <i class="nav-icon fas fa-table"></i>
+            <i class="nav-icon fas fa-id-card"></i> 
               <p>
                 Profil Anggota
-                <i class="fas fa-angle-right right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="/members/login" class="nav-link">
+              <i class="nav-icon fas  fa-sign-out-alt"></i> 
+              <p>
+                Keluar
               </p>
             </a>
           </li>

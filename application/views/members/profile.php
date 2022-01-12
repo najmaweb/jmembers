@@ -37,8 +37,9 @@
           <!--<i class="fas fa-arrow-right text-muted"></i>-->
           <!--<span class="badge badge-danger navbar-badge">3</span>-->
           <i class="fa-solid fa-arrow-right-to-bracket"></i>
-          <button id="btnLogout">Logout</button>
-          <button id="btnChangePassword">Ganti Password</button>
+          <button id="btnChangePassword" type="button" class="btn btn-primary btn-block">
+          <i class="fas fa-key"></i>
+          </button>
         </a>
       </li>
       <!-- Notifications Dropdown Menu -->

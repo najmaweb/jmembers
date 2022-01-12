@@ -20,11 +20,11 @@
                       <div class="card-body">
                       <div class="form-group">
                           <label for="exampleInputEmail1">Password</label>
-                          <input type="password" class="form-control" id="txtEditPassword" placeholder="ID Juleha">
+                          <input type="password" class="form-control" id="txtEditPassword" placeholder="Password">
                         </div>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Ulangi Password</label>
-                          <input type="password" class="form-control" id="txtEditPassword2" placeholder="Password">
+                          <input type="password" class="form-control" id="txtEditPassword2" placeholder="Konfirmasi Password">
                         </div>
                       </div>
                       <!-- /.card-body -->
