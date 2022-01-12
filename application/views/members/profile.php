@@ -244,7 +244,7 @@
   </aside>
   <!-- /.control-sidebar -->
 </div>
-<canvas id="c"></canvas>
+<canvas id="c" style="display:none"></canvas>
 <!-- ./wrapper -->
 <input style="display:none" type="file" name="uploader" id="uploader">
 <!-- jQuery -->
@@ -377,20 +377,21 @@ myimg.src = templatekta;//kartu;
     c.height = img.height
     c.width = img.width
     ctx.drawImage(img, 0, 0);
-    ctx.font = "21px Arial";
+    ctx.font = "32px Arial";
     ctx.textAlign = "center";
     ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText('Nama       : '+obj.nickname, img.width/2, img.height*0.76);
+    ctx.fillText(obj.nickname, img.width/2, img.height*0.76);
 
-    ctx.font = "25px Arial";
+    ctx.font = "30px Arial";
     ctx.textAlign = "center";
     ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.fillText('ID Juleha  : '+obj.juleha_id, img.width/2, img.height*0.8);
+    ctx.fillText(obj.juleha_id, img.width/2, img.height*0.8);
 
-
-
+    photo = document.getElementById('btnImg')
+//    ctx.textAlign = "center";
+    ctx.drawImage(photo, img.width/2 - 200, img.height*0.40,400,410);
     var link = document.createElement('a');
-    link.download = 'kta.jpg';
+    link.download = 'kta.png';
     link.href = document.getElementById('c').toDataURL()
     link.click();
   }
